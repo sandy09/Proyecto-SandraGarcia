@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Estilos css-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--Importación tipografía-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,900&display=swap" rel="stylesheet">
+    <title>Parota Furniture Design - Decoración</title>
+</head>
+<body>
+    <!--Header con logo-->
+    <header class="header">
+        <div class="header__logoContainer">
+            <!--Logo con link para volver a home -->
+           <a href="../index.html"><img class="logoContainer__logo" src="../img/logo.png"></a>
+        </div>
+        <!--Menu con lista desordenada-->
+        <nav class="header__menu">
+            <ul>
+                <li class="menu__item">
+                    <a href="comedores.html">Comedores</a>
+                </li>
+                <li class="menu__item">
+                    <a href="sala.html">Sala</a>
+                </li>
+                <li class="menu__item">
+                    <a href="decoracion.html">Decoración</a> 
+
+                </li>
+                <li class="menu__item">
+                    <a href="contacto.html">Contacto</a> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="bannerPromo">
+        <h2 class="bannerPromo__texto"> OFERTAS DE VERANO</h2>
+    </div>
+    <!--Contenido principal de la página-->
+    <main>
+        <!--Imagenes productos-->
+        <div class="contenido">
+            <div class="contenedorFiltros">
+                <div class="contenedorFiltros__filtro">
+                    <button class="filtro__boton">Ver filtros</button>
+                </div>
+                <div class="contenedorFiltros__texto">
+                    <h3>El elemento perfecto para decorar tu casa</h3>
+                </div>
+                <div class="contenedorFiltros__orden">
+                    <select class="orden__boton" name="ordenar" id="ordenar">    
+                        <option disabled="" selected="">Ordenar por:</option>
+                        <option value="precio">Precio menor</option>
+                        <option value="precio">Precio de mayor</option>
+                    </select>
+                </div>    
+            </div>
+            <div class="contenedorProductos">
+                <div class="contenedorProductos__card">
+                    <img class="card__img" src="../img/portavasos.png" alt="Producto">
+                    <h4 class="card__nombre">Descripción</h4>
+                    <h5 class="card__precio">$Precio</h5>
+                    <h5 class="card__preciodesc">$PrecioDesc</h5>
+                </div>
+                <div class="contenedorProductos__card">
+                    <img class="card__img" src="../img/portavasos.png" alt="Producto">
+                    <h4 class="card__nombre">Descripción</h4>
+                    <h5 class="card__precio">$Precio</h5>
+                    <h5 class="card__preciodesc">$PrecioDesc</h5>
+                </div>
+                <div class="contenedorProductos__card">
+                    <img class="card__img" src="../img/portavasos.png" alt="Producto">
+                    <h4 class="card__nombre">Descripción</h4>
+                    <h5 class="card__precio">$Precio</h5>
+                    <h5 class="card__preciodesc">$PrecioDesc</h5>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Footer-->
+    <footer>
+        <!--Mapa ubicación tienda-->
+        <div class="contenedorMapa">
+            <iframe class=contenedorMapa__mapa src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.388281755205!2d-98.25666748536582!3d19.04665865784418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc731d720aa15%3A0xbc216501c59f08ca!2sParota%20Furniture%20Desing!5e0!3m2!1ses-419!2smx!4v1658890878283!5m2!1ses-419!2smx" width="400" height="200"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <!--Redes sociales-->
+        <div class="redes">
+            <a href="https://www.facebook.com/parotafd"><img class="redes__iconos" src="../img/facebook.png" alt="Logo Facebook"></a>
+            <a href="https://www.instagram.com/parotafd/"><img class="redes__iconos" src="../img/instagram.png" alt="Logo instagram"></a>
+        </div>
+        <!--Texto condiciones-->
+        <h3 class="redes__texto">Todos los derechos reservados.</h3>
+    </footer>
+    
+</body>
+</html>

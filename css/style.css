@@ -1,0 +1,567 @@
+/*RESET*/
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    
+}
+/*BODY BACKGROUND*/
+body{
+    background-color: #9babc0;
+}
+/*CSS HEADER*/
+header{
+    background-color: #5D6B7D;
+    position: sticky;
+    top: 0;
+}
+
+.header__logoContainer{
+    width: 15%;
+    margin-left: 20px;
+}
+.logoContainer__logo{
+    width: 100%;
+}
+.header__menu{
+    background-color: #5D6B7D;
+    align-content: center;
+    text-align: end;
+    text-transform: uppercase;
+    padding-right: 20px;
+    border-top: 1px solid white;
+    
+}
+.menu__item{
+
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    border-right: 1px solid white;
+    margin: 5px 0px 5px 0px;   
+}
+.menu__item a{
+    text-decoration: none;
+    
+    
+}
+a:link, a:visited{
+    color: white;
+
+}
+a:hover{
+    color: black;
+    
+}
+/*CSS HOME*/
+.content__imagenes{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows:4 ;
+    grid-template-areas: 
+                        "oferta oferta img_1" 
+                        "oferta oferta img_1"
+                        "img_2 visitanos visitanos"
+                        "img_3 visitanos visitanos";    
+    justify-content:center;
+    align-items: center;   
+}
+
+.imagenes__oferta{
+    grid-area: oferta;
+    margin: 30px;
+    background-color: red;
+    width: 450px;
+    height: 70vh;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.imagenes__oferta a{
+    text-decoration: none;
+    color: white;
+    margin-top: 50px;
+
+}
+
+.imagenes__oferta a:hover{
+    color: black;
+
+}
+.imagenes__oferta a:visited{
+    color: white;
+
+}
+
+.imagenes__img_1{
+    grid-area: img_1;
+    margin: 30px;
+    width: 450px;
+}
+
+.imagenes__img_1 img{
+    height: 70vh;
+    width: 450px;
+}
+
+.imagenes__img_2{
+    grid-area: img_2;
+    margin: 30px;
+    width: 450px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagenes__img_2 img{
+    height: 50vh;
+    width: 100%;
+}
+
+.imagenes__img_3{
+    grid-area: img_3;
+    margin: 30px;
+    width: 450px;
+}
+.imagenes__img_3 img{
+    height: 50vh;
+    width: 100%;
+    width: 450px;
+}
+
+.imagenes__visitanos{
+    grid-area: visitanos;
+    background-color: white;
+    width: 450px;
+    height: 110vh;
+    margin: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: xx-large;
+    text-align: center;
+    color:black;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.imagenes__visitanos a{
+    text-decoration: none;
+    color: navy;
+    margin-top: 50px;
+
+}
+
+.imagenes__visitanos a:hover{
+    color: red;
+
+}
+.imagenes__visitanos a:visited{
+    color: navy;
+
+}
+/*CSS BANNER*/
+.bannerPromo{
+    background-color: red;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+}
+.bannerPromo__texto{
+    color: white;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+/*CSS FOOTER*/
+footer{
+
+    background-color: #5D6B7D;
+
+}
+.contenedorMapa{
+    display: inline;
+
+}
+.contenedorMapa__mapa{
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+.redes{
+    display: inline;
+    margin-left: 20%;
+}
+.redes__iconos
+{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+
+}
+
+.redes__texto{
+    font-size: small;
+    text-align: end;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+/*GRID CONTENIDO PAGES*/
+.contenido
+{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows:2 ;
+    grid-template-areas: 
+                        "contenedorFiltros" 
+                        "contenedorProductos";
+    justify-content:center;
+    align-items: center;   
+}
+
+.contenedorFiltros{
+    grid-area: contenedorFiltros;
+}
+
+.contenedorProductos{
+    grid-area: contenedorProductos;
+}
+
+
+/*CSS CONTENEDOR FILTROS PAGES*/
+.contenedorFiltros{
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid white;
+
+
+}
+
+.contenedorFiltros .filtro__boton, .orden__boton{
+    background-color: white !important;
+    border: 1px solid black;
+    padding: 20px;
+}
+.contenedorFiltros__texto{
+    color: black;
+    border: 2px dotted white;
+    padding: 20px;
+}
+
+/*CSS PRODUCTOS*/
+.contenedorProductos {
+    height: 50vh;
+    margin: 50px 0px 50px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    
+}
+.contenedorProductos__card {
+    height: 250px;
+    width: 250px;
+    display: inline-block;
+    margin: 10px;
+
+}
+
+.card__nombre{
+    padding-top: 10px;
+    margin-top: 10px;
+    text-align: center;
+    border-top: 1px solid white;
+}
+.card__precio{
+    color: red;
+    font-size: x-large;
+    text-align: center;
+}
+.card__preciodesc{
+    text-align: center;
+    font-style: italic;
+    text-decoration: line-through;
+
+
+}
+.card__img{
+    height: 250px;
+    width: 250px;
+
+}
+
+/*CSS FORMULARIO*/
+
+.contenedorContacto {
+
+    height: auto;
+    display: flex;
+    justify-content:space-around; 
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    margin: 50px 0px 50px 0px; 
+
+}
+.contenedorContacto h1{
+    margin-bottom: 50px;
+
+}
+
+.contenedorContacto__sucursal, .sucursal__redes{
+    width: 400px;
+}
+/*CSS div sucursal*/
+.contenedorContacto__sucursal{
+    text-align: left;
+    line-height: 30px;
+    margin-top: 5px;
+
+}
+.sucursal__direccion{
+    margin-top: 150px;
+}
+.sucursal__iconos{
+    width: 15%;
+    padding: 10px;
+    margin-left: 20px;
+
+}
+/*CSS div formulario*/
+.contenedorForm__subtitulo{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.contactForm__fieldset{
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 1em;
+    border: 2px solid transparent;
+    background-color: #ccc;
+    border-radius: 10px;
+
+}
+.contenedorForm__contactform{
+    width: 400px;
+    margin: auto;
+    
+}
+
+.fieldset__label{
+    width: 90px;
+	display:inline-block;
+    
+}
+.fieldset__input{
+    width:250px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+.fieldset__textarea{
+    width:350px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+.fieldset__button{
+    width:150px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+/*CSS FOOTER*/
+footer{
+
+    background-color: #5D6B7D;
+    height: 40vh;
+    
+
+}
+footer h3{
+    font-size: small;
+    text-align: end;
+    padding-right: 20px;
+    padding-top: 50px;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 480px) {
+    .header__logoContainer{
+        width: 100%;
+        height: 20vh;
+        margin-left: 0px;
+    
+    }
+    .header__logoContainer img{
+        width: 100%;
+        height: 20vh;
+
+    }
+    .content__imagenes{
+        grid-template-columns: 1;
+        grid-template-rows:4 ;
+        grid-template-areas: 
+                            "oferta"
+                            "img_1"
+                            "img_2"
+                            "img_3"
+                            "visitanos";    
+    }
+    .content__imagenes div{
+        width: 350px;
+    }
+    .content__imagenes div img{
+        width: 350px;
+    }
+    .imagenes__visitanos{
+        display: none;
+    }
+    .menu__item{
+
+        font-size: x-small; 
+    }
+    .content__img {
+        width: 450px;
+        margin: 20px 0px 20px 0px;
+  
+      }
+    .contenedorFiltros__texto{
+          display: none;
+    }
+    .sucursal__direccion{
+          margin-top: 10px;
+          
+    }
+    .contenedorContacto__sucursal{
+          text-align: center;
+          margin-bottom: 20px;
+          
+    }
+    .contenedorMapa{
+        display: none;
+    }
+    .contenedorProductos__card {
+        margin-right: 0px;
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+    .contenedorProductos{
+        height: auto;
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;  
+        justify-items: center;
+        align-content: center;
+        margin: 0px;
+    }
+    .contenedorContacto__contenedorForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedorForm__titulo{
+        text-align: center;
+    }
+    .contenedorForm__contactform{
+        width: 300px;
+        margin: 0
+        
+    }
+    .fieldset__label{
+        width: 60px;
+        font-size: small;
+        display:inline-block;
+        
+    }
+    .fieldset__input{
+        width:250px;
+        padding:3px 10px;
+        border:1px solid #f6f6f6;
+        border-radius:3px;
+        background-color:#f6f6f6;
+        margin:8px 0;
+        display:inline-block;
+    }
+    .fieldset__textarea{
+        width:250px;
+        padding:3px 10px;
+        border:1px solid #f6f6f6;
+        border-radius:3px;
+        background-color:#f6f6f6;
+        margin:8px 0;
+        display:inline-block;
+    }
+    
+    .fieldset__button{
+        width:150px;
+        padding:3px 10px;
+        border:1px solid #f6f6f6;
+        border-radius:3px;
+        background-color:#f6f6f6;
+        margin:8px 0;
+        display:inline-block;
+        margin-right: 10px;
+        margin-left: 55px;
+    }
+}
+    
+
+@media(max-width:600px){
+    .contenedorMapa{
+        display: none;
+      }
+      .contenedorFiltros__texto{
+        display: none;
+      }
+
+
+}
+
+
+
+
+
+
+
+  

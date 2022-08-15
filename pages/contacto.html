@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,900&display=swap" rel="stylesheet">
+    
+    <title>Contacto-Parota Furniture Design</title>
+</head>
+<body>
+     <!--Header con logo-->
+     <header class="header">
+        <div class="header__logoContainer">
+            <!--Logo con link para volver a home -->
+           <a href="../index.html"><img class="logoContainer__logo" src="../img/logo.png"></a>
+        </div>
+        <!--Menu con lista desordenada-->
+        <nav class="header__menu">
+            <ul>
+                <li class="menu__item">
+                    <a href="comedores.html">Comedores</a>
+                </li>
+                <li class="menu__item">
+                    <a href="sala.html">Sala</a>
+                </li>
+                <li class="menu__item">
+                    <a href="decoracion.html">Decoración</a> 
+
+                </li>
+                <li class="menu__item">
+                    <a href="contacto.html">Contacto</a> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Formulario de contacto-->
+    <div class="contenedorContacto">
+        <div class="contenedorContacto__sucursal"> 
+            <h1 class="sucursal__titulo">VISÍTANOS</h1>
+            <p class="sucursal__direccion">
+                Camino Real a Cholula 4802-B<br>
+                San Andres Cholula, Puebla <br><br>
+                Tel. <a href="tel:+522221195795">22-21-19-57-95</a><br><br>
+                Horario de apertura: <br>
+                De lunes a viernes de 11 a 7 pm<br>
+                Sábados de 10 am a 2 pm
+            </p><br>
+            <a href="https://www.facebook.com/parotafd"><img class="sucursal__iconos " src="../img/facebook.png" alt="Logo Facebook"></a>
+            <a href="https://www.instagram.com/parotafd/"><img class="sucursal__iconos" src="../img/instagram.png" alt="Logo instagram"></a>
+        </div>
+
+        <div class="contenedorContacto__contenedorForm">
+            <h1 class="contenedorForm__titulo">FORMULARIO DE CONTACTO</h1>
+            <h3 class="contenedorForm__subtitulo">¿Te interesa un mueble sobre diseño?</h3>
+            <form action="" class="contenedorForm__contactform" >
+                <fieldset class="contactForm__fieldset">
+                    <div>
+                        <label class="fieldset__label" for="nombre"> Nombre</label>
+                        <input class="fieldset__input" type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre">
+                    </div>
+                    <br>
+                    <div>
+                        <label class="fieldset__label" for="email">Email</label>
+                        <input class="fieldset__input" type="text" name="email" id="email" placeholder="Introduce tu email">
+                    
+                    </div>
+                    <br>
+                    <div>
+                        <label class="fieldset__label" for="telefono">Telefono</label>
+                        <input class="fieldset__input" type="tel" name="telefono" id="telefono" placeholder="Introduce tu telefono" >
+                    </div>
+                    <br>
+                    <div>
+                        <label class="fieldset__label" for="interes">Interés</label>
+                        <select class="fieldset__input" name="interes" id="interes">
+                            <option value="Comedores">Comedores</option>
+                            <option value="Sala">Sala</option>
+                            <option value="Decoracion">Decoracion</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <div><label class="fieldset__label" for="message">Mensaje</label></div>
+                        <textarea class="fieldset__textarea" type="text" name="message" id="message" class="message" rows="5" cols="50" placeholder="¿En que te podemos ayudar?"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <input class="fieldset__button" type="submit" value="Enviar" class="boton">
+                        <input class="fieldset__button" type="reset" value="Borrar" class="boton">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer>
+        <!--Mapa ubicación tienda-->
+        <div class="contenedorMapa">
+            <iframe class=contenedorMapa__mapa src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.388281755205!2d-98.25666748536582!3d19.04665865784418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc731d720aa15%3A0xbc216501c59f08ca!2sParota%20Furniture%20Desing!5e0!3m2!1ses-419!2smx!4v1658890878283!5m2!1ses-419!2smx" width="400" height="200"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <!--Redes sociales-->
+        <div class="redes">
+            <a href="https://www.facebook.com/parotafd"><img class="redes__iconos" src="../img/facebook.png" alt="Logo Facebook"></a>
+            <a href="https://www.instagram.com/parotafd/"><img class="redes__iconos" src="../img/instagram.png" alt="Logo instagram"></a>
+        </div>
+        <!--Texto condiciones-->
+        <h3 class="redes__texto">Todos los derechos reservados.</h3>
+    </footer>
+    
+</body>
+</html>
