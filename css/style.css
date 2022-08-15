@@ -70,6 +70,17 @@ a:hover{
     align-items: center;   
 }
 
+/*ANIMACION OFERTA*/
+
+.oferta{
+    font-size: x-large;
+    transition: all 2s linear;
+}
+
+.oferta:hover{
+    font-size: xx-large;
+}
+
 .imagenes__oferta{
     grid-area: oferta;
     margin: 30px;
